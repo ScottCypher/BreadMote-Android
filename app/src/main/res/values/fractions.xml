@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="tutorial_text_horizontal_percent">6%</fraction>
+    <fraction name="tutorial_text_vertical_percent">12%</fraction>
+</resources>

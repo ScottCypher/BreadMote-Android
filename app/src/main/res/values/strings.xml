@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">BreadMote</string>
+
+    <!-- Onboarding Activity -->
+    <string name="onboarding_1">Giving your invention an app is now as easy as buttering bread.</string>
+    <string name="onboarding_2">Simply import the BreadMote library into your hardware...</string>
+    <string name="onboarding_3">add code to customize the app...</string>
+    <string name="onboarding_4">and decide how to handle app interactions.</string>
+    <string name="onboarding_5">Then connect to your hardware and you will see your app. That’s it!</string>
+    <string name="onboarding_6">P.S. There are plenty of examples to help you get started!</string>
+
+    <!-- Home Activity -->
+    <string name="home_connect_bt">Connect Bluetooth</string>
+    <string name="home_connect_wifi">Connect Wi-Fi</string>
+    <string name="home_setup">Examples and hardware setup</string>
+    <string name="home_share">Share</string>
+    <string name="share">Check out %s - its lets you add an app to your hardware project</string>
+    <string name="home_contact">Contact support</string>
+    <string name="email_address">scottcypher14@gmail.com</string>
+    <string name="email_subject">BreadMote support (Android)</string>
+    <string name="email_not_found">No e-mail apps are installed</string>
+
+    <!-- Connect Activity -->
+    <string name="title_activity_connect">Connect</string>
+    <string name="connect_password_hint">Password</string>
+    <string name="connect_port_hunt">Port</string>
+    <string name="connect_show_password">show</string>
+    <string name="connect_invalid_port">Invalid port specified</string>
+    <string name="connect_device_failed">Unable to connect to \"%s\"</string>
+    <string name="connect_host_hint">Host / IP Address</string>
+    <string name="connect_invalid_host">Host must be specified</string>
+    <string name="connect_no_devices">No devices found</string>
+
+    <!-- Control Activity -->
+    <string name="control_no_components">No controls available</string>
+    <string name="control_time_format">%1$s %2$s</string>
+    <string name="control_show_error">View Error</string>
+    <string name="action_error">View error log</string>
+
+
+    <!-- Error Activity -->
+    <string name="title_activity_error">Error Log</string>
+    <string name="error_none">No errors reported</string>
+    <string name="action_delete">Clear log</string>
+    <string name="action_copy">Copy to clipboard</string>
+    <string name="error_clipboard_label">BreadMote Log</string>
+
+    <string name="error">%1$s: %2$s</string>
+    <string name="error_html"><![CDATA[<b>%1$s:</b> %2$s]]></string>
+
+
+    <string name="trans_home_connect" translatable="false">trans_home_connect</string>
+    <string name="location_dialog_t">Device location needed</string>
+    <string name="location_dialog_m"><![CDATA[To connect to nearby devices via Bluetooth or Wi-Fi, the location permission is needed. More info can be found <a href=\"https://developer.android.com/about/versions/marshmallow/android-6.0-changes.html#behavior-hardware-id\">here</a>]]></string>
+</resources>

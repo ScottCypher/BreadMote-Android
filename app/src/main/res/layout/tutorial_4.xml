@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".intro.BreadMoteIntro">
+
+    <TextView
+        android:id="@+id/txt"
+        style="@style/OnboardingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_4"
+        app:layout_marginLeftPercent="@fraction/tutorial_text_horizontal_percent"
+        app:layout_marginRightPercent="@fraction/tutorial_text_horizontal_percent"
+        app:layout_marginTopPercent="@fraction/tutorial_text_vertical_percent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt"
+        android:layout_marginBottom="@dimen/tutorial_img_margin"
+        android:padding="@dimen/onboarding_margin"
+        android:src="@drawable/tutorial_4"
+        app:layout_marginLeftPercent="@fraction/tutorial_text_horizontal_percent"
+        app:layout_marginRightPercent="@fraction/tutorial_text_horizontal_percent" />
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,197 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:padding="@dimen/home_option_padding"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:selectableItemBackground"
+                    android:onClick="onClickBluetooth">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.cypher.breadmote_example.SquareImageView
+                            android:id="@+id/img_bt"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="@dimen/home_card_connect_margin"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:tint="@color/colorAccent"
+                            app:srcCompat="@drawable/ic_bluetooth" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/home_card_connect_padding"
+                            android:paddingLeft="@dimen/home_card_connect_padding"
+                            android:paddingRight="@dimen/home_card_connect_padding"
+                            android:text="@string/home_connect_bt"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@android:color/background_light" />
+                    </LinearLayout>
+
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v4.widget.Space
+                android:layout_width="@dimen/home_option_padding"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:selectableItemBackground"
+                    android:onClick="onClickWifi">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.cypher.breadmote_example.SquareImageView
+                            android:id="@+id/img_wifi"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="@dimen/home_card_connect_margin"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:tint="@color/colorAccent"
+                            app:srcCompat="@drawable/ic_wifi" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/home_card_connect_padding"
+                            android:paddingLeft="@dimen/home_card_connect_padding"
+                            android:paddingRight="@dimen/home_card_connect_padding"
+                            android:text="@string/home_connect_wifi"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@android:color/background_light" />
+                    </LinearLayout>
+
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/home_option_padding"
+            android:layout_marginTop="@dimen/home_option_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:onClick="onClickSetup"
+                android:orientation="horizontal"
+                android:padding="@dimen/home_card_text_padding">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/home_card_text_padding"
+                    app:srcCompat="@drawable/ic_setup" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/home_setup"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/home_option_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:onClick="onClickShare"
+                android:orientation="horizontal"
+                android:padding="@dimen/home_card_text_padding">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/home_card_text_padding"
+                    app:srcCompat="@drawable/ic_home_share" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="@dimen/home_card_text_padding"
+                    android:gravity="center_vertical"
+                    android:text="@string/home_share"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/home_option_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:onClick="onClickFeedback"
+                android:orientation="horizontal"
+                android:padding="@dimen/home_card_text_padding">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/home_card_text_padding"
+                    app:srcCompat="@drawable/ic_home_support" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="@dimen/home_card_text_padding"
+                    android:gravity="center_vertical"
+                    android:text="@string/home_contact"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
