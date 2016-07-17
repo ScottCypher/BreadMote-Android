@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryLight">#7986CB</color>
+    <color name="colorPrimary">#3949AB</color>
+    <color name="colorPrimaryDark">#283593</color>
+    <color name="colorAccent">#AEEA00</color>
+    <color name="colorAccentDark">#95D100</color>
+    <color name="colorAccentFaded">#77AEEA00</color>
+    <color name="refreshColor">@color/colorAccentDark</color>
+    <color name="snackbar_background">@color/cardview_dark_background</color>
+    <color name="snackbar_text">@android:color/primary_text_dark</color>
+    <color name="snackbar_action">@color/colorAccent</color>
+
+</resources>

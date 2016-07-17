@@ -1,0 +1,15 @@
+<resources>
+    <string name="connect_device_nameless">Unknown device</string>
+    <string name="invalid_create_time_message"><![CDATA[Time Picker \"%1$s\" must use format {hours, minutes} and be on a valid 24 hour scale]]></string>
+    <string name="invalid_enable">Invalid enable</string>
+    <string name="invalid_disable">Invalid enable</string>
+    <string name="invalid_enable_message">\"%s\" has not been created yet</string>
+    <string name="invalid_delete">Invalid delete</string>
+    <string name="invalid_create_tag">Invalid create</string>
+    <string name="invalid_create_message">\"%s\" already exists</string>
+    <string name="unsupported_component_tag">Unsupported command</string>
+    <string name="unsupported_component_message">Could not handle message of type %d (Is your BreadMote up to date?)</string>
+    <string name="invalid_update_tag">Invalid update</string>
+    <string name="invalid_update_message">\"%s\" has not been created yet</string>
+    <string name="invalid_update_message_2">\"%s\" received wrong update type</string>
+</resources>

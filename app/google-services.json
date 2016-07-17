@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "586530548550",
+    "firebase_url": "https://breadmote.firebaseio.com",
+    "project_id": "breadmote",
+    "storage_bucket": "breadmote.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586530548550:android:8604475afa88dc3c",
+        "android_client_info": {
+          "package_name": "com.cypher.breadmote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586530548550-hbf2v6ft23cfkiim65udgbjihq1e9veh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7bk-EKody_lxVYec1mSPq4AvYT3EsntM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

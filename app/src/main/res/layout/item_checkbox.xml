@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/recycler_spacing"
+    android:layout_marginTop="@dimen/recycler_spacing"
+    android:minHeight="@dimen/recycler_item_min">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/recycler_padding"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/checkbox_padding"
+        android:paddingStart="@dimen/checkbox_padding"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:text="New CheckBox" />
+</android.support.v7.widget.CardView>

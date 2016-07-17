@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.cypher.breadmote"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 9
+        versionName "0.1"
+
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+    }
+
+    productFlavors {
+        development {
+            applicationId "com.cypher.breadmote.dev"
+        }
+        production {
+            applicationId "com.cypher.breadmote"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.github.paolorotolo:appintro:3.4.0'
+}
+
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:23.1.0'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile project(":breadmote")
+//    compile 'com.cypher.breadmote:breadmote:0.1.3'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:percent:23.4.0'
+    compile 'com.android.support:customtabs:23.4.0'
+
+    compile 'com.google.firebase:firebase-crash:9.0.1'
+
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+}
+
+apply plugin: 'com.google.gms.google-services'
