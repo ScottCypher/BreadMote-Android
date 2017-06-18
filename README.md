@@ -9,7 +9,7 @@ The Android SDK is published to JCenter. To install the library, add the followi
 
     compile 'com.cypher.breadmote:breadmote:0.1.3'
 
-##Required Permissions
+## Required Permissions
 
 Depending on how you plan to use BreadMote, different permissions are needed.
 
