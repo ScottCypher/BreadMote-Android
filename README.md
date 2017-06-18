@@ -3,7 +3,7 @@ This is the SDK / example app corresponding to the BreadMote hardware library. T
 * [API](http://scottcypher.github.io/BreadMote/android/index.html)
 * [Hardware library](https://www.breadmote.com)
 
-##Install BreadMote
+## Install BreadMote
 
 The Android SDK is published to JCenter. To install the library, add the following dependency to your `build.gradle` file:
 
@@ -13,13 +13,13 @@ The Android SDK is published to JCenter. To install the library, add the followi
 
 Depending on how you plan to use BreadMote, different permissions are needed.
 
-####Bluetooth
+#### Bluetooth
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-####WiFi
+#### WiFi
 If you plan to connect over Wi-Fi and need to allow the user to change networks from in app (such as connecting directly to an access point), the following permissions are needed: 
 
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -34,7 +34,7 @@ If you plan to connect over an internet connection only, you will simply need:
 *Note: ACCESS_COARSE_LOCATION is needed for devices running Android 6+ [in order to get details about nearby devices](https://developer.android.com/about/versions/marshmallow/android-6.0-changes.html#behavior-hardware-id)*
 
 
-##Setup BreadMote
+## Setup BreadMote
 
 The BreadMote library should initialized once with a Context. This can be done from the application object:
 
@@ -45,7 +45,7 @@ The BreadMote library should initialized once with a Context. This can be done f
     }
 
 
-##Scanning for devices
+## Scanning for devices
 
 Scanning gives you a list of nearby devices. To scan, call 
 
@@ -56,15 +56,15 @@ Scans will automatically complete on their own. Scan results and the current sca
 	BreadMote.addListener(ScanListener scanListener);
 
 
-##Connecting to a device
+## Connecting to a device
 
 Different connection types require different method calls for connecting.
 
-####Bluetooth
+#### Bluetooth
 
 	BreadMote.connectBluetooth(Device device); //Devices are returned during scans
 
-####WiFi
+#### WiFi
 
 To connect to a device using the current network:
 
@@ -74,14 +74,14 @@ To connect to a device on a different network (e.g. if your target device is an 
 
 	BreadMote.connectWiFi(Device device, String password, String host int port);
 
-####Observing connections
+#### Observing connections
 To observe device disconnects and connects, add a listener with
 
 	BreadMote.addListener(ConnectionListener connectionListener);
 
 The Connection object returned in the ConnectionListener callback will be needed to interact with the device.
 
-##Interacting with a device
+## Interacting with a device
 
 Once a BreadMote supported device has been connected to, you can get its list of components/controls by adding a listener with:
 
@@ -96,7 +96,7 @@ Once you have changed the value of a Component, you can notify the connected dev
 	connection.sendComponentChange(Component component);
 
 
-##Errors
+## Errors
 
 A BreadMote device may cause errors based on user defined behavior or when performing an incorrect action (e.g. enabling a non-existent component). To observe these errors, add a listener with
 
@@ -109,7 +109,7 @@ The error log can be edited by calling
 	connection.removeError(int index);
 
 
-##Cleanup
+## Cleanup
 
 Bluetooth and WiFi operations can be expensive. Care should be taken to cleanup resources when possible.  When you no longer wish to be connected to a specific device, call
 
@@ -120,7 +120,7 @@ When you are completely done scanning, connecting, or interacting, call
 	BreadMote.terminate();
 
 
-##Limitations
+## Limitations
 
 This library is still a work in progress. Feel free to add a pull request if you think you know of a good fix!
 
