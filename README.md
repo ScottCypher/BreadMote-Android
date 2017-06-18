@@ -1,7 +1,7 @@
-This is the SDK / example app corresponding to the BreadMote hardware library. The SDK and library are designed to simplify communication between your hardware and Android device. Be sure to checkout http://www.breadmote.com for more information about this project.
+This is the SDK / example app corresponding to the BreadMote hardware library. The SDK and library are designed to simplify communication between your hardware and Android device. Be sure to checkout http://scottcypher.github.io/BreadMote/ for more information about this project.
 
 * [API](http://scottcypher.github.io/BreadMote/android/index.html)
-* [Hardware library](https://www.breadmote.com)
+* [Hardware library](http://scottcypher.github.io/BreadMote/)
 
 ## Install BreadMote
 
