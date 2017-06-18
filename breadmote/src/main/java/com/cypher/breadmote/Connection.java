@@ -258,6 +258,7 @@ public class Connection {
                 if (update.canApplyTo(messageHeader, component)) {
                     if (component.isAnUpdate(messageHeader, update)) {
                         component.update(messageHeader, update);
+                        found = true;
                     } else {
                         //same value, no update
                         return;
